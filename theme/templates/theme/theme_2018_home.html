@@ -1,0 +1,13 @@
+{% extends 'theme/base.html' %}
+
+{% load cms_tags %}
+
+{% block content %}
+    <div id="root"></div>
+    {% placeholder 'content' %}
+    {% placeholder 'splash' %}
+
+    <footer>
+        {% static_placeholder 'footer' %}
+    </footer>
+{% endblock %}

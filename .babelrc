@@ -1,0 +1,17 @@
+
+{
+  "presets": [
+    ["env", {
+      "targets": {
+        "browsers": ["last 2 versions"],
+        "node": "current"
+      }
+    }], "react"
+  ],
+  "plugins": [
+    "transform-flow-strip-types",
+    "transform-object-rest-spread",
+    "react-hot-loader/babel",
+    "transform-decorators-legacy"
+  ]
+}
