@@ -1,0 +1,42 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Coustard|Exo+2:200|Kanit:300|Open+Sans:300|Yantramanav');
+
+// Colors
+$white: #f3fdff;
+$body-bg: #222;
+$card-bg: #13697a99;
+$theme-colors: (
+  "primary": #0074d9,
+  "danger": #ff4136
+);
+
+// Variables
+$body-color: $white;
+
+
+// Fonts
+$font-family-sans-serif: 'Open Sans', sans-serif, 'Yantramanav', sans-serif, 'Exo 2', sans-serif;
+$font-family-base: $font-family-sans-serif !default;
+$font-family-h1: 'Coustard', serif !default;
+
+//Headings
+$headings-font-family:        $font-family-h1;
+$headings-font-weight:        500 !default;
+$headings-line-height:        1.2 !default;
+$headings-color:              inherit !default;
+
+//Sizes
+$font-size-base: 1.2rem;
+
+// Required
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+// Other
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/code";
+@import "~bootstrap/scss/grid";
+
