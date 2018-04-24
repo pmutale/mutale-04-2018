@@ -1,0 +1,22 @@
+{% load cms_tags menu_tags sekizai_tags %}
+{% load render_bundle from webpack_loader %}
+<!doctype html>
+<html>
+<head>
+    <title>{% block title %}Welcome: Peter Mutale {% endblock title %}</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    {% render_block "css" %}
+    {% render_bundle 'themes' 'css' %}
+</head>
+<body>
+{% cms_toolbar %}
+<div class="container">
+    <ul class="nav">
+    </ul>
+    {% block content %}
+    {% endblock content %}
+</div>
+{% render_bundle 'themes' 'js'%}
+{% render_block "js" %}
+</body>
+</html>
