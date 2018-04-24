@@ -12,20 +12,22 @@ const extractSass = new ExtractTextPlugin(styles_path, {
 
 
 module.exports = merge(config, {
-    // devtool: 'source-map',
-    mode: 'development',
+        devtool: 'source-map',
 
-    devServer: {
-        hot: true,
-        inline: true,
-        port: 4040,
-        host:"mutale.localhost",
-        proxy: {
-            '**': 'http://localhost:4000'
-        }
-    },
+        mode: 'development',
 
-    plugins: [
-        extractSass,
-    ]
-} );
+        devServer: {
+            hot: true,
+            inline: true,
+            port: 4040,
+            host: "mutale.localhost",
+            proxy: {
+                '**': 'http://localhost:4000'
+            }
+        },
+
+        plugins: [
+            extractSass
+        ]
+    }
+);
