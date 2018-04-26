@@ -1,4 +1,4 @@
-{% load cms_tags menu_tags sekizai_tags %}
+{% load cms_tags menu_tags sekizai_tags js_reverse %}
 {% load render_bundle from webpack_loader %}
 <!doctype html>
 <html>
@@ -16,7 +16,12 @@
     {% block content %}
     {% endblock content %}
 </div>
+
+<script type="text/javascript" charset="utf-8">
+  {% js_reverse_inline %}
+</script>
 {% render_bundle 'themes' 'js'%}
+
 {% render_block "js" %}
 </body>
 </html>

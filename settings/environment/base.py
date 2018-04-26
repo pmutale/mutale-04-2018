@@ -94,6 +94,7 @@ INSTALLED_APPS = (
     'djangocms_video',
     'mysite',
     'webpack_loader',
+    'django_js_reverse',
 
     # Own
     'theme.apps.ThemeConfig'

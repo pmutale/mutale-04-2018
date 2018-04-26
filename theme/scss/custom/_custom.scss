@@ -1,21 +1,29 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Coustard|Exo+2:200|Kanit:300|Open+Sans:300|Yantramanav');
-
+@import url('https://fonts.googleapis.com/css?family=Coustard|Dosis:200|Exo+2:200|Kanit:300|Lato:300|Montserrat:300|Nixie+One|Open+Sans:300|Yantramanav');
 // Colors
 $white: #f3fdff;
 $body-bg: #222;
-$card-bg: #13697a99;
+$link-hover: unquote('#10e9aba6');
+$card-bg: unquote('#13697a99');
 $theme-colors: (
   "primary": #0074d9,
   "danger": #ff4136
 );
+$link-color: inherit;
+$link-decoration: yellow;
+$link-hover-color: $link-hover;
+$link-hover-decoration: white;
 
 // Variables
 $body-color: $white;
 
+$background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1111' height='1111' viewBox='0 0 20 20'%3E%3Cg fill-opacity='0.18'%3E%3Cpolygon fill='%233e7263' points='20 10 10 0 0 0 20 20'/%3E%3Cpolygon fill='%233e7263' points='0 10 0 20 10 20'/%3E%3C/g%3E%3C/svg%3E");
 
+body {
+  background-image: $background-image;
+}
 // Fonts
-$font-family-sans-serif: 'Open Sans', sans-serif, 'Yantramanav', sans-serif, 'Exo 2', sans-serif;
+$font-family-sans-serif: 'Montserrat', sans-serif, 'Yantramanav', sans-serif, 'Exo 2', sans-serif;
 $font-family-base: $font-family-sans-serif !default;
 $font-family-h1: 'Coustard', serif !default;
 

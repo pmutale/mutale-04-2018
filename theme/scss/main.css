@@ -1,36 +1,25 @@
 /*
-Error: Invalid CSS after "$card-bg: ": expected expression (e.g. 1px, bold), was "#13697a99;"
-        on line 7 of custom/_custom.scss
+Error: File to import not found or unreadable: ~bootstrap/scss/functions.
+        on line 40 of custom/_custom.scss
         from line 3 of main.scss
 
-2: @import url('https://fonts.googleapis.com/css?family=Coustard|Exo+2:200|Kanit:300|Open+Sans:300|Yantramanav');
-3: 
-4: // Colors
-5: $white: #f3fdff;
-6: $body-bg: #222;
-7: $card-bg: #13697a99;
-8: $theme-colors: (
-9:   "primary": #0074d9,
-10:   "danger": #ff4136
-11: );
-12: 
-
 Backtrace:
-custom/_custom.scss:7
+custom/_custom.scss:40
 main.scss:3
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1207:in `expected'
-/usr/lib/ruby/vendor_ruby/sass/script/lexer.rb:229:in `expected!'
-/usr/lib/ruby/vendor_ruby/sass/script/parser.rb:710:in `assert_expr'
-/usr/lib/ruby/vendor_ruby/sass/script/parser.rb:75:in `parse'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1063:in `sass_script'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:630:in `variable'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:684:in `block_child'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:677:in `block_contents'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:125:in `stylesheet'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:41:in `parse'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:406:in `_to_tree'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:312:in `to_tree'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:326:in `block in visit_import'
+/usr/lib/ruby/vendor_ruby/sass/tree/import_node.rb:67:in `rescue in import'
+/usr/lib/ruby/vendor_ruby/sass/tree/import_node.rb:45:in `import'
+/usr/lib/ruby/vendor_ruby/sass/tree/import_node.rb:28:in `imported_file'
+/usr/lib/ruby/vendor_ruby/sass/tree/import_node.rb:37:in `css_import?'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:313:in `visit_import'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `block in visit'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `block in with_base'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:115:in `with_frame'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `with_base'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:328:in `block (2 levels) in visit_import'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:328:in `map'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:328:in `block in visit_import'
 /usr/lib/ruby/vendor_ruby/sass/stack.rb:88:in `block in with_import'
 /usr/lib/ruby/vendor_ruby/sass/stack.rb:115:in `with_frame'
 /usr/lib/ruby/vendor_ruby/sass/stack.rb:88:in `with_import'
@@ -70,4 +59,4 @@ main.scss:3
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"$card-bg: \": expected expression (e.g. 1px, bold), was \"#13697a99;\"\A         on line 7 of custom/_custom.scss\A         from line 3 of main.scss\A \A 2: @import url('https://fonts.googleapis.com/css?family=Coustard|Exo+2:200|Kanit:300|Open+Sans:300|Yantramanav');\A 3: \A 4: // Colors\A 5: $white: #f3fdff;\A 6: $body-bg: #222;\A 7: $card-bg: #13697a99;\A 8: $theme-colors: (\A 9:   \"primary\": #0074d9,\A 10:   \"danger\": #ff4136\A 11: );\A 12: "; }
+  content: "Error: File to import not found or unreadable: ~bootstrap/scss/functions.\A         on line 40 of custom/_custom.scss\A         from line 3 of main.scss"; }
