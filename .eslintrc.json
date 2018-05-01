@@ -1,6 +1,7 @@
 {
   "globals": {
-    "Urls": true
+    "Urls": true,
+    "$": true
   },
   "env": {
     "browser": true,

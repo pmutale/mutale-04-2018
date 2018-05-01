@@ -97,7 +97,9 @@ INSTALLED_APPS = (
     'django_js_reverse',
 
     # Own
-    'theme.apps.ThemeConfig'
+    'theme.apps.ThemeConfig',
+    'resume.apps.ResumeConfig',
+    'api.apps.ApiConfig'
 )
 
 STATICFILES_FINDERS = {

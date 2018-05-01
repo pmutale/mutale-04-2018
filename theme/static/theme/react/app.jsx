@@ -1,17 +1,29 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import "../../../scss/main";
-import { hot } from 'react-hot-loader'
-import Base from './components/base'
-import ErrorBoundary from './components/error_boundary/error_boundary'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import '../../../scss/main';
+import { AppContainer } from 'react-hot-loader';
+import Base from './components/base';
 
+const injectPoint = document.getElementById('root');
 
-const renderApp = (ErrorBoundary) => {
+const renderApp = Component => {
   ReactDOM.render(
-    <ErrorBoundary>
-      <Base/>
-    </ErrorBoundary>,
-    document.getElementById('root'),
-  )
+    <AppContainer>
+      <Component
+        current={injectPoint.getAttribute('data-pre-current')}
+        language={injectPoint.getAttribute('data-language-page')}
+      />
+    </AppContainer>,
+    injectPoint
+  );
 };
-hot(module)(renderApp(ErrorBoundary));
+
+renderApp(Base);
+
+if (module.hot) {
+  module.hot.accept('./components/base', () => {
+    renderApp(Base);
+    renderApp(require('./components/base'));
+  });
+}
+// hot(module)(renderApp(ErrorBoundary));

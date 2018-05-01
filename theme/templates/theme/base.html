@@ -1,4 +1,4 @@
-{% load cms_tags menu_tags sekizai_tags js_reverse %}
+{% load i18n cms_tags menu_tags sekizai_tags js_reverse page_current_url %}
 {% load render_bundle from webpack_loader %}
 <!doctype html>
 <html>
@@ -13,6 +13,8 @@
 <div class="container">
     <ul class="nav">
     </ul>
+{% get_current_language as LANGUAGE_CODE %}
+    <div id="root" data-pre-current="{{ request.path|page_current_url|default:'home' }}" data-language-page="{{ LANGUAGE_CODE }}">   </div>
     {% block content %}
     {% endblock content %}
 </div>
