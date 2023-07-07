@@ -33,7 +33,7 @@ https://github.com/divio/djangocms-picture/archive/master.zip?1523431670.04
 https://github.com/divio/djangocms-video/archive/master.zip?1523431670.04
 https://github.com/divio/djangocms-column/archive/master.zip?1523431670.04
 easy_thumbnails<2.5,>=2
-django-filer>=1.3
+django-filer>=3.0.0rc1
 Django<2.0
 pytz
 django-classy-tags>=0.7
